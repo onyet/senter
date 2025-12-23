@@ -1,0 +1,19 @@
+{
+  "@@locale": "zh",
+  "appTitle": "手电筒",
+  "torchOn": "灯亮",
+  "torchOff": "灯灭",
+  "turnOn": "打开灯",
+  "turnOff": "关闭灯",
+  "help": "帮助",
+  "helpTitle": "帮助",
+  "appDescription": "手电筒应用",
+  "pressButton": "按按钮打开/关闭手电筒。",
+  "support": "支持：",
+  "author": "Dian Mukti Wibowo",
+  "email": "电子邮件：onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp：+6282221874400",
+  "website": "网站：onyet.id",
+  "close": "关闭",
+  "language": "语言"
+}

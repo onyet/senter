@@ -1,0 +1,19 @@
+{
+  "@@locale": "ja",
+  "appTitle": "懐中電灯",
+  "torchOn": "ライトオン",
+  "torchOff": "ライトオフ",
+  "turnOn": "ライトをオンにする",
+  "turnOff": "ライトをオフにする",
+  "help": "ヘルプ",
+  "helpTitle": "ヘルプ",
+  "appDescription": "懐中電灯アプリ",
+  "pressButton": "ボタンを押して懐中電灯をオン/オフにします。",
+  "support": "サポート：",
+  "author": "Dian Mukti Wibowo",
+  "email": "メール：onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp：+6282221874400",
+  "website": "ウェブサイト：onyet.id",
+  "close": "閉じる",
+  "language": "言語"
+}

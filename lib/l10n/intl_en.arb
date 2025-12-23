@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "appTitle": "Flashlight",
+  "torchOn": "Light On",
+  "torchOff": "Light Off",
+  "turnOn": "Turn On Light",
+  "turnOff": "Turn Off Light",
+  "help": "Help",
+  "helpTitle": "Help",
+  "appDescription": "Flashlight App",
+  "pressButton": "Press the button to turn on/off the flashlight.",
+  "support": "Support:",
+  "author": "Dian Mukti Wibowo",
+  "email": "Email: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Website: onyet.id",
+  "close": "Close",
+  "language": "Language"
+}

@@ -1,0 +1,19 @@
+{
+  "@@locale": "ar",
+  "appTitle": "مصباح يدوي",
+  "torchOn": "الضوء مضيء",
+  "torchOff": "الضوء مطفأ",
+  "turnOn": "تشغيل الضوء",
+  "turnOff": "إيقاف الضوء",
+  "help": "مساعدة",
+  "helpTitle": "مساعدة",
+  "appDescription": "تطبيق مصباح يدوي",
+  "pressButton": "اضغط على الزر لتشغيل/إيقاف المصباح اليدوي.",
+  "support": "الدعم:",
+  "author": "Dian Mukti Wibowo",
+  "email": "البريد الإلكتروني: onyetcorp@gmail.com",
+  "whatsapp": "واتساب: +6282221874400",
+  "website": "الموقع: onyet.id",
+  "close": "إغلاق",
+  "language": "اللغة"
+}

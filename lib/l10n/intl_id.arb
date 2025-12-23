@@ -1,0 +1,19 @@
+{
+  "@@locale": "id",
+  "appTitle": "Lampu Senter",
+  "torchOn": "Lampu Menyala",
+  "torchOff": "Lampu Mati",
+  "turnOn": "Nyalakan Lampu",
+  "turnOff": "Matikan Lampu",
+  "help": "Bantuan",
+  "helpTitle": "Bantuan",
+  "appDescription": "Aplikasi Lampu Senter",
+  "pressButton": "Tekan tombol untuk menyalakan/mematikan lampu senter.",
+  "support": "Dukungan:",
+  "author": "Dian Mukti Wibowo",
+  "email": "Email: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Website: onyet.id",
+  "close": "Tutup",
+  "language": "Bahasa"
+}

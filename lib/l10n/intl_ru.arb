@@ -1,0 +1,19 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Фонарик",
+  "torchOn": "Свет включен",
+  "torchOff": "Свет выключен",
+  "turnOn": "Включить свет",
+  "turnOff": "Выключить свет",
+  "help": "Помощь",
+  "helpTitle": "Помощь",
+  "appDescription": "Приложение фонарика",
+  "pressButton": "Нажмите кнопку, чтобы включить/выключить фонарик.",
+  "support": "Поддержка:",
+  "author": "Dian Mukti Wibowo",
+  "email": "Электронная почта: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Веб-сайт: onyet.id",
+  "close": "Закрыть",
+  "language": "Язык"
+}
