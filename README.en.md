@@ -120,6 +120,8 @@ We welcome contributions from the community! Follow these steps:
 
 This app is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
+The app icon (light bulb) from [OpenMoji](https://openmoji.org/library/emoji-1F4A1/) by Sina Schulz, uses the [CC BY-SA 4.0](https://openmoji.org/) license.
+
 ## Contact
 
 - **Developer**: Dian Mukti Wibowo

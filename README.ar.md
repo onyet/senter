@@ -120,6 +120,8 @@ flutter run --release
 
 هذا التطبيق مرخص بموجب [MIT License](LICENSE). راجع ملف LICENSE للتفاصيل.
 
+أيقونة التطبيق (المصباح) من [OpenMoji](https://openmoji.org/library/emoji-1F4A1/) بواسطة Sina Schulz، تستخدم ترخيص [CC BY-SA 4.0](https://openmoji.org/).
+
 ## الاتصال
 
 - **المطور**: Dian Mukti Wibowo

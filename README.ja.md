@@ -120,6 +120,8 @@ flutter run --release
 
 このアプリは[MIT License](LICENSE)でライセンスされています。詳細はLICENSEファイルを参照してください。
 
+アプリのアイコン（電球）は[OpenMoji](https://openmoji.org/library/emoji-1F4A1/)のSina Schulzによるもので、[CC BY-SA 4.0](https://openmoji.org/)ライセンスを使用しています。
+
 ## 連絡先
 
 - **開発者**: Dian Mukti Wibowo

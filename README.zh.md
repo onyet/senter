@@ -120,6 +120,8 @@ flutter run --release
 
 此应用根据[MIT License](LICENSE)授权。有关详细信息，请参阅LICENSE文件。
 
+应用图标（灯泡）来自[OpenMoji](https://openmoji.org/library/emoji-1F4A1/)由Sina Schulz创作，使用[CC BY-SA 4.0](https://openmoji.org/)许可证。
+
 ## 联系方式
 
 - **开发者**: Dian Mukti Wibowo

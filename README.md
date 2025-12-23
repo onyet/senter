@@ -121,6 +121,8 @@ Kami menyambut kontribusi dari komunitas! Ikuti langkah-langkah berikut:
 
 Aplikasi ini dilisensikan di bawah [MIT License](LICENSE). Lihat file LICENSE untuk detail lebih lanjut.
 
+Ikon aplikasi (bola lampu) dari [OpenMoji](https://openmoji.org/library/emoji-1F4A1/) oleh Sina Schulz, menggunakan lisensi [CC BY-SA 4.0](https://openmoji.org/).
+
 ## Kontak
 
 - **Pengembang**: Dian Mukti Wibowo

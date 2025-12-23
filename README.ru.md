@@ -120,6 +120,8 @@ flutter run --release
 
 Это приложение лицензировано под [MIT License](LICENSE). См. файл LICENSE для подробностей.
 
+Иконка приложения (лампочка) из [OpenMoji](https://openmoji.org/library/emoji-1F4A1/) от Sina Schulz, использует лицензию [CC BY-SA 4.0](https://openmoji.org/).
+
 ## Контакт
 
 - **Разработчик**: Dian Mukti Wibowo
