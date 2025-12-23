@@ -34,6 +34,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "ボタンを押して懐中電灯をオン/オフにします。",
     ),
     "support": MessageLookupByLibrary.simpleMessage("サポート："),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage(
+      "このデバイスでは懐中電灯機能が利用できません。",
+    ),
     "torchOff": MessageLookupByLibrary.simpleMessage("ライトオフ"),
     "torchOn": MessageLookupByLibrary.simpleMessage("ライトオン"),
     "turnOff": MessageLookupByLibrary.simpleMessage("ライトをオフにする"),

@@ -55,4 +55,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get language => 'Language';
+
+  @override
+  String get torchNotAvailable =>
+      'Torch feature is not available on this device.';
 }

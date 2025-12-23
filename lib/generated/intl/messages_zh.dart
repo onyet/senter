@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "language": MessageLookupByLibrary.simpleMessage("语言"),
     "pressButton": MessageLookupByLibrary.simpleMessage("按按钮打开/关闭手电筒。"),
     "support": MessageLookupByLibrary.simpleMessage("支持："),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage("此设备不支持手电筒功能。"),
     "torchOff": MessageLookupByLibrary.simpleMessage("灯灭"),
     "torchOn": MessageLookupByLibrary.simpleMessage("灯亮"),
     "turnOff": MessageLookupByLibrary.simpleMessage("关闭灯"),

@@ -55,4 +55,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get language => '言語';
+
+  @override
+  String get torchNotAvailable => 'このデバイスでは懐中電灯機能が利用できません。';
 }

@@ -163,6 +163,16 @@ class S {
   String get language {
     return Intl.message('Language', name: 'language', desc: '', args: []);
   }
+
+  /// `Torch feature is not available on this device.`
+  String get torchNotAvailable {
+    return Intl.message(
+      'Torch feature is not available on this device.',
+      name: 'torchNotAvailable',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

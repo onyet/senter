@@ -36,6 +36,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "اضغط على الزر لتشغيل/إيقاف المصباح اليدوي.",
     ),
     "support": MessageLookupByLibrary.simpleMessage("الدعم:"),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage(
+      "ميزة المصباح اليدوي غير متوفرة على هذا الجهاز.",
+    ),
     "torchOff": MessageLookupByLibrary.simpleMessage("الضوء مطفأ"),
     "torchOn": MessageLookupByLibrary.simpleMessage("الضوء مضيء"),
     "turnOff": MessageLookupByLibrary.simpleMessage("إيقاف الضوء"),

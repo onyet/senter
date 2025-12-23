@@ -36,6 +36,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Tekan tombol untuk menyalakan/mematikan lampu senter.",
     ),
     "support": MessageLookupByLibrary.simpleMessage("Dukungan:"),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage(
+      "Fitur senter tidak tersedia di perangkat ini.",
+    ),
     "torchOff": MessageLookupByLibrary.simpleMessage("Lampu Mati"),
     "torchOn": MessageLookupByLibrary.simpleMessage("Lampu Menyala"),
     "turnOff": MessageLookupByLibrary.simpleMessage("Matikan Lampu"),

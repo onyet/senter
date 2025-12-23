@@ -55,4 +55,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get language => 'Язык';
+
+  @override
+  String get torchNotAvailable =>
+      'Функция фонарика недоступна на этом устройстве.';
 }

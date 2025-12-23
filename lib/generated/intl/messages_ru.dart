@@ -38,6 +38,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Нажмите кнопку, чтобы включить/выключить фонарик.",
     ),
     "support": MessageLookupByLibrary.simpleMessage("Поддержка:"),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage(
+      "Функция фонарика недоступна на этом устройстве.",
+    ),
     "torchOff": MessageLookupByLibrary.simpleMessage("Свет выключен"),
     "torchOn": MessageLookupByLibrary.simpleMessage("Свет включен"),
     "turnOff": MessageLookupByLibrary.simpleMessage("Выключить свет"),

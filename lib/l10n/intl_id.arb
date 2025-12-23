@@ -15,5 +15,6 @@
   "whatsapp": "WhatsApp: +6282221874400",
   "website": "Website: onyet.id",
   "close": "Tutup",
-  "language": "Bahasa"
+  "language": "Bahasa",
+  "torchNotAvailable": "Fitur senter tidak tersedia di perangkat ini."
 }

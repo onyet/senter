@@ -15,5 +15,6 @@
   "whatsapp": "WhatsApp: +6282221874400",
   "website": "Website: onyet.id",
   "close": "Close",
-  "language": "Language"
+  "language": "Language",
+  "torchNotAvailable": "Torch feature is not available on this device."
 }

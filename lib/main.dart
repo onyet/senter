@@ -95,7 +95,7 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
 
   void _loadInterstitialAd() {
     InterstitialAd.load(
-      adUnitId: 'ca-app-pub-3940256099942544/1033173712', // Test ad unit
+      adUnitId: 'ca-app-pub-7967860040352202/3448155290', // Production ad unit
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
@@ -109,44 +109,146 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
   }
 
   void _toggleTorch() async {
-    if (_isTorchOn) {
-      await TorchControl.turnOff();
-      _animationController.reverse();
-    } else {
-      await TorchControl.turnOn();
-      _animationController.forward();
+    try {
+      if (_isTorchOn) {
+        await TorchControl.turnOff();
+        _animationController.reverse();
+      } else {
+        await TorchControl.turnOn();
+        _animationController.forward();
+      }
+      setState(() {
+        _isTorchOn = !_isTorchOn;
+      });
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(S.of(context).torchNotAvailable),
+          duration: const Duration(seconds: 3),
+        ),
+      );
     }
-    setState(() {
-      _isTorchOn = !_isTorchOn;
-    });
   }
 
   void _showHelp(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(S.of(context).helpTitle),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(S.of(context).appDescription),
-            const SizedBox(height: 10),
-            Text(S.of(context).pressButton),
-            const SizedBox(height: 10),
-            Text(S.of(context).support),
-            Text(S.of(context).author),
-            Text(S.of(context).email),
-            Text(S.of(context).whatsapp),
-            Text(S.of(context).website),
-          ],
+      builder: (context) => Dialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(S.of(context).close),
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.help_outline, color: Theme.of(context).primaryColor, size: 30),
+                  const SizedBox(width: 10),
+                  Text(
+                    S.of(context).helpTitle,
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+              Card(
+                elevation: 4,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        S.of(context).appDescription,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Icon(Icons.touch_app, color: Colors.blue, size: 20),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              S.of(context).pressButton,
+                              style: const TextStyle(fontSize: 14),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              Card(
+                elevation: 4,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.support, color: Colors.green, size: 20),
+                          const SizedBox(width: 10),
+                          Text(
+                            S.of(context).support,
+                            style: const TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      ListTile(
+                        leading: Icon(Icons.person, color: Colors.purple),
+                        title: const Text('Dian Mukti Wibowo'),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.email, color: Colors.red),
+                        title: const Text('onyetcorp@gmail.com'),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.phone, color: Colors.green),
+                        title: const Text('+6282221874400'),
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.web, color: Colors.blue),
+                        title: const Text('onyet.id'),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                ),
+                child: Text(S.of(context).close),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -160,42 +262,42 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
           mainAxisSize: MainAxisSize.min,
           children: [
             ListTile(
-              title: const Text('English'),
+              title: const Text('🇺🇸 English'),
               onTap: () {
                 widget.onLocaleChange(const Locale('en'));
                 Navigator.of(context).pop();
               },
             ),
             ListTile(
-              title: const Text('Bahasa Indonesia'),
+              title: const Text('🇮🇩 Bahasa Indonesia'),
               onTap: () {
                 widget.onLocaleChange(const Locale('id'));
                 Navigator.of(context).pop();
               },
             ),
             ListTile(
-              title: const Text('中文'),
+              title: const Text('🇨🇳 中文'),
               onTap: () {
                 widget.onLocaleChange(const Locale('zh'));
                 Navigator.of(context).pop();
               },
             ),
             ListTile(
-              title: const Text('日本語'),
+              title: const Text('🇯🇵 日本語'),
               onTap: () {
                 widget.onLocaleChange(const Locale('ja'));
                 Navigator.of(context).pop();
               },
             ),
             ListTile(
-              title: const Text('Русский'),
+              title: const Text('🇷🇺 Русский'),
               onTap: () {
                 widget.onLocaleChange(const Locale('ru'));
                 Navigator.of(context).pop();
               },
             ),
             ListTile(
-              title: const Text('العربية'),
+              title: const Text('🇸🇦 العربية'),
               onTap: () {
                 widget.onLocaleChange(const Locale('ar'));
                 Navigator.of(context).pop();
@@ -231,87 +333,140 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
             ),
           ],
         ),
-        body: AnimatedContainer(
-          duration: const Duration(seconds: 1),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: _isTorchOn
-                  ? [const Color(0xFFFFD700), const Color(0xFFFFF8DC)]
-                  : [const Color(0xFF2C2C2C), const Color(0xFF1A1A1A)],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-          ),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                AnimatedBuilder(
-                  animation: _animationController,
-                  builder: (context, child) {
-                    return Transform.scale(
-                      scale: _scaleAnimation.value,
-                      child: Icon(
-                        _isTorchOn ? Icons.flashlight_on : Icons.flashlight_off,
-                        size: 120,
-                        color: _isTorchOn ? Colors.yellowAccent : Colors.grey,
-                      ),
-                    );
-                  },
+        body: SafeArea(
+          child: Stack(
+            children: [
+              AnimatedContainer(
+                duration: const Duration(seconds: 1),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: _isTorchOn
+                        ? [const Color(0xFFFFD700), const Color(0xFFFFF8DC)]
+                        : [const Color(0xFF2C2C2C), const Color(0xFF1A1A1A)],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
                 ),
-                const SizedBox(height: 20),
-                AnimatedOpacity(
-                  opacity: _opacityAnimation.value,
+              ),
+              Center(
+                child: AnimatedContainer(
                   duration: const Duration(milliseconds: 500),
-                  child: Text(
-                    _isTorchOn
-                        ? S.of(context).torchOn
-                        : S.of(context).torchOff,
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: LinearGradient(
+                      colors: _isTorchOn
+                          ? [const Color(0xFFFFD700), const Color(0xFFFFA500)]
+                          : [const Color(0xFF424242), const Color(0xFF212121)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    border: Border.all(
+                      color: _isTorchOn ? Colors.white.withOpacity(0.8) : Colors.grey.withOpacity(0.5),
+                      width: 4,
+                    ),
+                    boxShadow: _isTorchOn
+                        ? [
+                            BoxShadow(
+                              color: Colors.yellow.withOpacity(0.8),
+                              spreadRadius: 20,
+                              blurRadius: 30,
+                              offset: const Offset(0, 0),
+                            ),
+                            BoxShadow(
+                              color: Colors.yellow.withOpacity(0.4),
+                              spreadRadius: 10,
+                              blurRadius: 20,
+                              offset: const Offset(0, 0),
+                            ),
+                          ]
+                        : [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 10,
+                              offset: const Offset(0, 5),
+                            ),
+                          ],
+                  ),
+                  child: InkWell(
+                    onTap: _toggleTorch,
+                    borderRadius: BorderRadius.circular(75),
+                    child: Icon(
+                      Icons.power_settings_new,
+                      size: 80,
                       color: _isTorchOn ? Colors.black : Colors.white,
                     ),
                   ),
                 ),
-                const SizedBox(height: 40),
-                InkWell(
-                  onTap: _toggleTorch,
-                  borderRadius: BorderRadius.circular(50),
+              ),
+              Positioned(
+                bottom: 40,
+                left: 20,
+                right: 20,
+                child: AnimatedOpacity(
+                  opacity: _opacityAnimation.value,
+                  duration: const Duration(milliseconds: 500),
                   child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
+                    padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: _isTorchOn
-                            ? [const Color(0xFFFFD700), const Color(0xFFFFA500)]
-                            : [const Color(0xFF424242), const Color(0xFF212121)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
+                      color: _isTorchOn ? Colors.black.withOpacity(0.7) : Colors.black.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: _isTorchOn ? Colors.yellow : Colors.white,
+                        width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(50),
-                      boxShadow: [
-                        BoxShadow(
-                          color: _isTorchOn ? Colors.yellow.withOpacity(0.5) : Colors.black.withOpacity(0.5),
-                          spreadRadius: 5,
-                          blurRadius: 15,
-                          offset: const Offset(0, 10),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              _isTorchOn ? Icons.flashlight_on : Icons.flashlight_off,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            const SizedBox(width: 10),
+                            Flexible(
+                              child: Text(
+                                _isTorchOn
+                                    ? S.of(context).torchOn
+                                    : S.of(context).torchOff,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Flexible(
+                              child: Text(
+                                S.of(context).pressButton,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                    child: Text(
-                      _isTorchOn
-                          ? S.of(context).turnOff
-                          : S.of(context).turnOn,
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600,
-                        color: _isTorchOn ? Colors.black : Colors.white,
-                      ),
-                    ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

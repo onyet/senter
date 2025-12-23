@@ -55,4 +55,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get language => '语言';
+
+  @override
+  String get torchNotAvailable => '此设备不支持手电筒功能。';
 }

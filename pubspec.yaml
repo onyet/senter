@@ -1,7 +1,7 @@
 name: senter
 description: "Aplikasi lampu senter sederhana dengan konsep pisang untuk menyalakan flash kamera sebagai sumber cahaya."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0+1
 
 authors:
   - Dian Mukti Wibowo <onyetcorp@gmail.com>

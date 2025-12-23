@@ -201,6 +201,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Language'**
   String get language;
+
+  /// No description provided for @torchNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Torch feature is not available on this device.'**
+  String get torchNotAvailable;
 }
 
 class _AppLocalizationsDelegate

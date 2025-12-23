@@ -56,4 +56,8 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get language => 'Bahasa';
+
+  @override
+  String get torchNotAvailable =>
+      'Fitur senter tidak tersedia di perangkat ini.';
 }

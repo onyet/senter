@@ -55,4 +55,8 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get language => 'اللغة';
+
+  @override
+  String get torchNotAvailable =>
+      'ميزة المصباح اليدوي غير متوفرة على هذا الجهاز.';
 }

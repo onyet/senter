@@ -15,5 +15,6 @@
   "whatsapp": "WhatsApp: +6282221874400",
   "website": "Веб-сайт: onyet.id",
   "close": "Закрыть",
-  "language": "Язык"
+  "language": "Язык",
+  "torchNotAvailable": "Функция фонарика недоступна на этом устройстве."
 }

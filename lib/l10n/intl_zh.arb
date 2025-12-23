@@ -15,5 +15,6 @@
   "whatsapp": "WhatsApp：+6282221874400",
   "website": "网站：onyet.id",
   "close": "关闭",
-  "language": "语言"
+  "language": "语言",
+  "torchNotAvailable": "此设备不支持手电筒功能。"
 }

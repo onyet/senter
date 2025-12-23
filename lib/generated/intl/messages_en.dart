@@ -34,6 +34,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Press the button to turn on/off the flashlight.",
     ),
     "support": MessageLookupByLibrary.simpleMessage("Support:"),
+    "torchNotAvailable": MessageLookupByLibrary.simpleMessage(
+      "Torch feature is not available on this device.",
+    ),
     "torchOff": MessageLookupByLibrary.simpleMessage("Light Off"),
     "torchOn": MessageLookupByLibrary.simpleMessage("Light On"),
     "turnOff": MessageLookupByLibrary.simpleMessage("Turn Off Light"),
