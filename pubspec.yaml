@@ -17,6 +17,9 @@ dependencies:
   torch_control: ^0.4.1
   google_mobile_ads: ^5.0.0
   flutter_native_splash: ^2.4.1
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -26,14 +29,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  fonts:
-    - family: OpenMoji
-      fonts:
-        - asset: assets/fonts/OpenMoji-Black.ttf
 
 flutter_icons:
   android: true
