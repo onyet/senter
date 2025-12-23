@@ -1,3 +1,13 @@
+<div align="center">
+
+**选择语言**
+
+点击语言选项切换语言。
+
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+
+</div>
+
 # 手电筒应用
 
 基于Flutter的简单手电筒应用，以黄色香蕉主题设计。该应用允许用户打开相机闪光灯作为光源，具有直观的界面和多语言支持。

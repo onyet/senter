@@ -1,3 +1,13 @@
+<div align="center">
+
+**言語を選択**
+
+言語オプションをクリックして言語を切り替えます。
+
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+
+</div>
+
 # 懐中電灯アプリ
 
 黄色いバナナのテーマで設計されたシンプルなFlutterベースの懐中電灯アプリ。このアプリは、ユーザーがカメラのフラッシュを光源としてオンにできるようにし、直感的なインターフェースと多言語サポートを提供します。

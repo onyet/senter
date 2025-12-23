@@ -1,3 +1,14 @@
+
+<div align="center">
+
+**Pilih Bahasa**
+
+Klik pilihan bahasa untuk berpindah bahasa.
+
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+
+</div>
+
 # Lampu Senter (Flashlight App)
 
 Aplikasi lampu senter sederhana berbasis Flutter yang dirancang dengan tema pisang kuning. Aplikasi ini memungkinkan pengguna untuk menyalakan lampu flash kamera sebagai sumber cahaya, dengan antarmuka yang intuitif dan mendukung multi-bahasa.
@@ -10,16 +21,6 @@ Aplikasi lampu senter sederhana berbasis Flutter yang dirancang dengan tema pisa
 - **Iklan AdMob**: Integrasi interstitial ads saat keluar aplikasi untuk monetisasi.
 - **Responsif**: Desain yang menyesuaikan dengan berbagai ukuran layar dan tombol navigasi virtual.
 - **Splash Screen**: Layar pembuka dengan ikon OpenMoji.
-
-<div align="center">
-
-**Pilih Bahasa**
-
-Klik pilihan bahasa untuk berpindah bahasa.
-
-- [English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
-
-</div>
 
 ## Screenshot
 

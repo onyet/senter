@@ -1,3 +1,13 @@
+<div align="center">
+
+**Choose Language**
+
+Click on a language option to switch languages.
+
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+
+</div>
+
 # Flashlight App
 
 A simple Flutter-based flashlight app designed with a yellow banana theme. This app allows users to turn on the camera flash as a light source, with an intuitive interface and multi-language support.
