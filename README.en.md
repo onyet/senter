@@ -21,16 +21,6 @@ A simple Flutter-based flashlight app designed with a yellow banana theme. This 
 - **Responsive**: Design that adapts to various screen sizes and virtual navigation buttons.
 - **Splash Screen**: Opening screen with OpenMoji icon.
 
-<div align="center">
-
-**Choose Language**
-
-Click on a language option to switch languages.
-
-- [English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
-
-</div>
-
 ## Screenshots
 
 | Screenshot 1 | Screenshot 2 |

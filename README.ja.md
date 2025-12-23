@@ -21,16 +21,6 @@
 - **レスポンシブ**: さまざまな画面サイズと仮想ナビゲーションボタンに適応するデザイン。
 - **スプラッシュスクリーン**: OpenMojiアイコン付きのオープニングスクリーン。
 
-<div align="center">
-
-**言語を選択**
-
-言語オプションをクリックして言語を切り替えます。
-
-- [English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
-
-</div>
-
 ## スクリーンショット
 
 | スクリーンショット 1 | スクリーンショット 2 |

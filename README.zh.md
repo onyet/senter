@@ -21,16 +21,6 @@
 - **响应式**: 适应各种屏幕尺寸和虚拟导航按钮的设计。
 - **启动画面**: 带有OpenMoji图标的启动画面。
 
-<div align="center">
-
-**选择语言**
-
-点击语言选项切换语言。
-
-- [English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
-
-</div>
-
 ## 截图
 
 | 截图 1 | 截图 2 |
