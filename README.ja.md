@@ -4,7 +4,7 @@
 
 言語オプションをクリックして言語を切り替えます。
 
-[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md) | [Deutsch](README.de.md) | [Português](README.pt_BR.md) | [Kiswahili](README.sw.md)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 - **懐中電灯制御**: カメラのフラッシュをオン/オフする電源ボタン。
 - **動的アニメーション**: ライトがオン時のグローとグラデーション効果によるスムーズな遷移。
-- **多言語**: 6言語のサポート: インドネシア語、英語、北京語、日本語、ロシア語、アラビア語。
+- **多言語**: 9言語のサポート: インドネシア語、英語、北京語、日本語、ロシア語、アラビア語、ドイツ語、ポルトガル語、スワヒリ語。
 - **AdMob広告**: アプリ退出時のインタースティシャル広告統合で収益化。
 - **レスポンシブ**: さまざまな画面サイズと仮想ナビゲーションボタンに適応するデザイン。
 - **スプラッシュスクリーン**: OpenMojiアイコン付きのオープニングスクリーン。

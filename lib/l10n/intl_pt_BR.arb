@@ -1,0 +1,20 @@
+{
+  "@@locale": "pt_BR",
+  "appTitle": "Lanterna",
+  "torchOn": "Luz Ligada",
+  "torchOff": "Luz Desligada",
+  "turnOn": "Ligar Luz",
+  "turnOff": "Desligar Luz",
+  "help": "Ajuda",
+  "helpTitle": "Ajuda",
+  "appDescription": "App de Lanterna",
+  "pressButton": "Pressione o botão para ligar/desligar a lanterna.",
+  "support": "Suporte:",
+  "author": "Dian Mukti Wibowo",
+  "email": "E-mail: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Website: onyet.id",
+  "close": "Fechar",
+  "language": "Idioma",
+  "torchNotAvailable": "Recurso de lanterna não está disponível neste dispositivo."
+}

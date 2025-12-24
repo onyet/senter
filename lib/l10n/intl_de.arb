@@ -1,0 +1,20 @@
+{
+  "@@locale": "de",
+  "appTitle": "Taschenlampe",
+  "torchOn": "Licht an",
+  "torchOff": "Licht aus",
+  "turnOn": "Licht einschalten",
+  "turnOff": "Licht ausschalten",
+  "help": "Hilfe",
+  "helpTitle": "Hilfe",
+  "appDescription": "Taschenlampen-App",
+  "pressButton": "Drücken Sie die Taste, um die Taschenlampe ein-/auszuschalten.",
+  "support": "Support:",
+  "author": "Dian Mukti Wibowo",
+  "email": "E-Mail: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Website: onyet.id",
+  "close": "Schließen",
+  "language": "Sprache",
+  "torchNotAvailable": "Taschenlampen-Funktion ist auf diesem Gerät nicht verfügbar."
+}

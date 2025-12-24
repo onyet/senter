@@ -4,7 +4,7 @@
 
 Click on a language option to switch languages.
 
-[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md) | [Deutsch](README.de.md) | [Português](README.pt_BR.md) | [Kiswahili](README.sw.md)
 
 </div>
 
@@ -16,7 +16,7 @@ A simple Flutter-based flashlight app designed with a yellow banana theme. This 
 
 - **Flashlight Control**: Power button to turn on/off the camera flash.
 - **Dynamic Animations**: Smooth transitions with glow and gradient effects when the light is on.
-- **Multi-Language**: Support for 6 languages: Indonesian, English, Mandarin, Japanese, Russian, and Arabic.
+- **Multi-Language**: Support for 9 languages: Indonesian, English, Mandarin, Japanese, Russian, Arabic, German, Portuguese, and Swahili.
 - **AdMob Ads**: Interstitial ads integration when exiting the app for monetization.
 - **Responsive**: Design that adapts to various screen sizes and virtual navigation buttons.
 - **Splash Screen**: Opening screen with OpenMoji icon.

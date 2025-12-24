@@ -1,0 +1,20 @@
+{
+  "@@locale": "sw",
+  "appTitle": "Taa ya Mkono",
+  "torchOn": "Taa Imeangazwa",
+  "torchOff": "Taa Imezimwa",
+  "turnOn": "Washa Taa",
+  "turnOff": "Zima Taa",
+  "help": "Msaada",
+  "helpTitle": "Msaada",
+  "appDescription": "Programu ya Taa ya Mkono",
+  "pressButton": "Bonyeza kitufe ili kuwasha/kuzima taa ya mkono.",
+  "support": "Msaada:",
+  "author": "Dian Mukti Wibowo",
+  "email": "Barua pepe: onyetcorp@gmail.com",
+  "whatsapp": "WhatsApp: +6282221874400",
+  "website": "Tovuti: onyet.id",
+  "close": "Funga",
+  "language": "Lugha",
+  "torchNotAvailable": "Kipengele cha taa ya mkono hakipatikani kwenye kifaa hiki."
+}

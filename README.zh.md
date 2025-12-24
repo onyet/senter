@@ -4,7 +4,7 @@
 
 点击语言选项切换语言。
 
-[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md) | [Deutsch](README.de.md) | [Português](README.pt_BR.md) | [Kiswahili](README.sw.md)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 - **手电筒控制**: 电源按钮打开/关闭相机闪光灯。
 - **动态动画**: 灯光开启时的光晕和渐变效果的平滑过渡。
-- **多语言**: 支持6种语言: 印尼语、英语、普通话、日语、俄语和阿拉伯语。
+- **多语言**: 支持9种语言：印尼语、英语、普通话、日语、俄语、阿拉伯语、德语、葡萄牙语和斯瓦希里语。
 - **AdMob广告**: 退出应用时的插页广告集成，用于货币化。
 - **响应式**: 适应各种屏幕尺寸和虚拟导航按钮的设计。
 - **启动画面**: 带有OpenMoji图标的启动画面。

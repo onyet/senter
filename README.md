@@ -5,7 +5,7 @@
 
 Klik pilihan bahasa untuk berpindah bahasa.
 
-[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md)
+[English](README.en.md) | [Bahasa Indonesia](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [中文](README.zh.md) | [العربية](README.ar.md) | [Deutsch](README.de.md) | [Português](README.pt_BR.md) | [Kiswahili](README.sw.md)
 
 </div>
 
@@ -17,7 +17,7 @@ Aplikasi lampu senter sederhana berbasis Flutter yang dirancang dengan tema pisa
 
 - **Kontrol Lampu Senter**: Tombol power untuk menyalakan/mematikan lampu flash kamera.
 - **Animasi Dinamis**: Transisi halus dengan efek glow dan gradient saat lampu menyala.
-- **Multi-Bahasa**: Dukungan 6 bahasa: Bahasa Indonesia, English, 中文 (Mandarin), 日本語 (Japanese), Русский (Russian), dan العربية (Arabic).
+- **Multi-Bahasa**: Dukungan 9 bahasa: Bahasa Indonesia, English, 中文 (Mandarin), 日本語 (Japanese), Русский (Russian), العربية (Arabic), Deutsch (German), Português (Portuguese), dan Kiswahili (Swahili).
 - **Iklan AdMob**: Integrasi interstitial ads saat keluar aplikasi untuk monetisasi.
 - **Responsif**: Desain yang menyesuaikan dengan berbagai ukuran layar dan tombol navigasi virtual.
 - **Splash Screen**: Layar pembuka dengan ikon OpenMoji.

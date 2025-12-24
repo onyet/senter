@@ -44,6 +44,9 @@ class _MainAppState extends State<MainApp> {
         Locale('ja'), // Japanese
         Locale('ru'), // Russian
         Locale('ar'), // Arabic
+        Locale('de'), // German
+        Locale('pt', 'BR'), // Portuguese (Brazil)
+        Locale('sw'), // Swahili
       ],
       theme: ThemeData(
         primaryColor: const Color(0xFFFFD700), // Yellow banana
@@ -300,6 +303,27 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
               title: const Text('🇸🇦 العربية'),
               onTap: () {
                 widget.onLocaleChange(const Locale('ar'));
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: const Text('🇩🇪 Deutsch'),
+              onTap: () {
+                widget.onLocaleChange(const Locale('de'));
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: const Text('🇧🇷 Português'),
+              onTap: () {
+                widget.onLocaleChange(const Locale('pt', 'BR'));
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: const Text('🇹🇿 Kiswahili'),
+              onTap: () {
+                widget.onLocaleChange(const Locale('sw'));
                 Navigator.of(context).pop();
               },
             ),
