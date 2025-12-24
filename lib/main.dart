@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:torch_control/torch_control.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:flutter/foundation.dart';
 import 'generated/l10n.dart';
 
 void main() {
@@ -99,23 +100,28 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
 
   void _loadInterstitialAd() {
     InterstitialAd.load(
-      adUnitId: 'ca-app-pub-7967860040352202/3448155290', // Production ad unit
+      adUnitId: kDebugMode
+          ? 'ca-app-pub-3940256099942544/1033173712' // Test ad unit
+          : 'ca-app-pub-7967860040352202/3448155290', // Production ad unit
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
+          debugPrint('InterstitialAd loaded successfully');
           _interstitialAd = ad;
           _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
             onAdShowedFullScreenContent: (ad) {
+              debugPrint('Ad showed');
               _isAdShowing = true;
             },
             onAdDismissedFullScreenContent: (ad) {
+              debugPrint('Ad dismissed, reloading');
               _isAdShowing = false;
               _interstitialAd!.dispose();
               _loadInterstitialAd(); // Load ulang ad setelah ditutup
             },
             onAdFailedToShowFullScreenContent: (ad, error) {
-              _isAdShowing = false;
               debugPrint('Failed to show interstitial: $error');
+              _isAdShowing = false;
             },
           );
         },
@@ -352,6 +358,7 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
+        debugPrint('onWillPop called, ad: $_interstitialAd, showing: $_isAdShowing');
         if (_interstitialAd != null && !_isAdShowing) {
           _isAdShowing = true;
           _interstitialAd!.show();
