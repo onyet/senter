@@ -76,6 +76,7 @@ class SenterPage extends StatefulWidget {
 class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateMixin {
   bool _isTorchOn = false;
   InterstitialAd? _interstitialAd;
+  bool _isAdShowing = false;
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
   late Animation<double> _opacityAnimation;
@@ -103,6 +104,20 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
           _interstitialAd = ad;
+          _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+            onAdShowedFullScreenContent: (ad) {
+              _isAdShowing = true;
+            },
+            onAdDismissedFullScreenContent: (ad) {
+              _isAdShowing = false;
+              _interstitialAd!.dispose();
+              _loadInterstitialAd(); // Load ulang ad setelah ditutup
+            },
+            onAdFailedToShowFullScreenContent: (ad, error) {
+              _isAdShowing = false;
+              debugPrint('Failed to show interstitial: $error');
+            },
+          );
         },
         onAdFailedToLoad: (error) {
           debugPrint('InterstitialAd failed to load: $error');
@@ -337,7 +352,8 @@ class _SenterPageState extends State<SenterPage> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        if (_interstitialAd != null) {
+        if (_interstitialAd != null && !_isAdShowing) {
+          _isAdShowing = true;
           _interstitialAd!.show();
         }
         return true;
